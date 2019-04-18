@@ -1,0 +1,79 @@
+@font-face
+{
+	font-family: zilla slab;
+	src: url("../font/zillaslab.otf");
+}
+body
+{
+    background-color: transparent;
+    color: black;
+}
+#popup-content
+{
+    width: 240px;
+    margin:-4px;
+	background-color: whitesmoke;
+	border: 1px solid transparent;
+	position: relative;
+	height: 281px;
+}
+#titles
+{
+	position: absolute;
+	width: 240px;
+	height: 41px;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+}
+#letters
+{
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	top: 41px;
+	left: 0px;
+	overflow: hidden;
+}
+.section_title
+{
+	background-color: whitesmoke;
+	width: 120px;
+	padding: 5px;
+	color: black;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 18px;
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	font-family: zilla slab;
+	margin: 0px;
+	cursor: pointer;
+	position: relative;
+	font-weight: bold;
+	transition: 0.5s;
+}
+.letter
+{
+	background-color: whitesmoke;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	color: black;
+	border: 0px;
+	border-radius: 0px;
+	font-size: 18px;
+	font-family: zilla slab;
+	margin: 0px;
+	cursor: pointer;
+	position: relative;
+	transition: 0.5s;
+}
+.section_title:hover, .letter:hover
+{
+	background-color: rgb(218, 218, 218);
+}
+.section_title:active, .letter:active
+{
+	background-color: rgb(179, 179, 179);
+}

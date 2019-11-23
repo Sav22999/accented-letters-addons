@@ -7,4 +7,10 @@ You can open an issue and there you must describe the feedback, the bug or the n
 
 ## Screenshots
 
-<img src="screenshots/Screenshot 1.png" alt="screenshot 1" width="30%" />&nbsp;<img src="screenshots/Screenshot 2.png" alt="screenshot 2" width="30%" />
+New UI (1.1+):
+
+<img src="screenshots/screenshot_new.png" alt="screenshot new UI" style="zoom:50%;" />&nbsp;
+
+Old UI (until 1.0):
+
+<img src="screenshots/screenshot_old.png" alt="screenshot old" style="zoom:50%;" />

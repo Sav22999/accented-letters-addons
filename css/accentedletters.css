@@ -83,7 +83,7 @@ body
 	position: relative;
 	transition: 0.1s;
 }
-.section_title:hover, .letter:hover, .section_title:focus
+.section_title:hover, .letter:hover
 {
 	background-color: rgb(221, 222, 223);
 }

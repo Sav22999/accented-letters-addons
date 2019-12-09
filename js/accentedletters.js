@@ -32,10 +32,77 @@ function setLowerUpperCase(type)
 		document.getElementById("uppercase").style.borderTopColor="transparent";
 		document.getElementById("uppercase").style.color="black";
 	}
+}
 
+function setUILanguage()
+{
+	var lang=browser.i18n.getUILanguage().toString();
+	var uppercase_title="", lowercase_title="";
+	switch (lang) {
+		case "ar":
+			//Arabic
+			uppercase_title="الأحرف الكبيرة";
+			lowercase_title="أحرف صغيرة";
+			break;
+
+		case "de":
+			//German
+			uppercase_title="Großbuchstaben";
+			lowercase_title="Kleinbuchstaben";
+			break;
+
+		case "es-ES":
+		case "es-AR":
+		case "es-CL":
+		case "es-MX":
+			//Spanish (Spain-ES), but also Spanish (Argentina-AR), Spanish (Chile-CL) and Spanish (Mexico-MX)
+			uppercase_title="Mayúscula";
+			lowercase_title="Minúscula";
+			break;
+
+		case "fr":
+			//French
+			uppercase_title="Majuscule";
+			lowercase_title="Minuscule";
+			break;
+
+		case "it":
+			//Italian
+			uppercase_title="Maiuscolo";
+			lowercase_title="Minuscolo";
+			break;
+
+		case "ja":
+			//Japanese
+			uppercase_title="大文字";
+			lowercase_title="小文字";
+			break;
+
+		case "pt-PT":
+		case "pt-BR":
+			//Portuguese (Portugal-PT), but also Portuguese (Brazilian-BR)
+			uppercase_title="Maiúsculas";
+			lowercase_title="Minúsculas";
+			break;
+
+		case "zh-CN":
+		case "zh-TW":
+			//Chinese (Simplified-CN), but also Chinese (Traditional-TW)
+			uppercase_title="大写";
+			lowercase_title="小写字母";
+			break;
+
+		default:
+			//other languages, and also en-GB (British-GB), en-US (American-US), en-CA (Canadian-CA)
+			uppercase_title="Uppercase";
+			lowercase_title="Lowercase";
+	}
+	document.getElementById("uppercase").value=uppercase_title;
+	document.getElementById("lowercase").value=lowercase_title;
 }
 
 setLowerUpperCase("lower");
+setUILanguage();
 
 // button click events
 document.getElementById("lowercase").onclick = function(e){setLowerUpperCase("lower");};

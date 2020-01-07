@@ -78,6 +78,18 @@ function setUILanguage()
 			lowercase_title="小文字";
 			break;
 
+		case "nl":
+			//Dutch
+			uppercase_title="Hoofdletters";
+			lowercase_title="Kleine letters";
+			break;
+
+		case "pl":
+			//Polish
+			uppercase_title="Duże litery";
+			lowercase_title="Małe litery";
+			break;
+
 		case "pt-PT":
 		case "pt-BR":
 			//Portuguese (Portugal-PT), but also Portuguese (Brazilian-BR)

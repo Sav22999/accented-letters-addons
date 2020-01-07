@@ -3,7 +3,23 @@ This extension permits you to copy an accented letter in the clipboard. You can 
 It is published on Firefox Addons https://addons.mozilla.org/it/firefox/addon/accented-letters/.
 
 ## How to contribute
-You can open an issue and there you must describe the feedback, the bug or the new feature you want.
+You can open an issue and there you must describe the feedback, the bug or the new feature you want. You can request a new language too.
+
+## Supported languages
+
+The add-ons is translated in these following languages (sort A-Z):
+
+- Arabic (ar)
+- English
+- German (de)
+- Spanish (es-ES, es-AR, es-CL, es-MX)
+- French
+- Italian
+- Japanese
+- Dutch
+- Polish
+- Portuguese (pt-PT, pt-BR)
+- Chinese (zh-CN, zh-TW)
 
 ## Screenshots
 

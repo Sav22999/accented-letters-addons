@@ -10,14 +10,14 @@ You can open an issue and there you must describe the feedback, the bug or the n
 The add-ons is translated in these following languages (sort A-Z):
 
 - Arabic (ar)
-- English
+- English (default - en-US, en-UK, en-CA)
 - German (de)
 - Spanish (es-ES, es-AR, es-CL, es-MX)
-- French
-- Italian
-- Japanese
-- Dutch
-- Polish
+- French (fr)
+- Italian (it)
+- Japanese (ja)
+- Dutch (nl)
+- Polish (pl)
 - Portuguese (pt-PT, pt-BR)
 - Chinese (zh-CN, zh-TW)
 

@@ -1,6 +1,10 @@
-# Accented letters
+# <img src="img/icon-dark-96.png" width="40px" alt=""></img> Accented letters
 This extension permits you to copy an accented letter in the clipboard. You can choose if you want to copy a lower letter or an upper letter.
-It is published on Firefox Addons https://addons.mozilla.org/it/firefox/addon/accented-letters/.
+Official repo of https://addons.mozilla.org/it/firefox/addon/accented-letters/.
+
+[![GitHub release](https://img.shields.io/github/release/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/emoji/releases/) [![GitHub license](https://img.shields.io/github/license/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/accented-letters-addons/blob/master/LICENSE) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+
+[<img src="img/badge.png" height="60px">](https://addons.mozilla.org/it/firefox/addon/accented-letters/) [<img src="img/a-project-of.png" height="60px" />](https://saveriomorelli.com) [<img src="img/realised-by.png" height="60px" />](https://saveriomorelli.com)
 
 ## How to contribute
 You can open an issue and there you must describe the feedback, the bug or the new feature you want. You can request a new language too.
@@ -25,8 +29,8 @@ The add-ons is translated in these following languages (sort A-Z):
 
 New UI (1.1+):
 
-<img src="screenshots/screenshot_new.png" alt="screenshot new UI" style="zoom:50%;" />&nbsp;
+<img src="screenshots/screenshot_new.png" alt="screenshot new UI" height="500px" />&nbsp;
 
 Old UI (until 1.0):
 
-<img src="screenshots/screenshot_old.png" alt="screenshot old" style="zoom:50%;" />
+<img src="screenshots/screenshot_old.png" alt="screenshot old" height="500px" />

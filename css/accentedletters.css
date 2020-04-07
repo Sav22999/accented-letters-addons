@@ -95,3 +95,25 @@ body
 {
 	background-color: rgb(201, 202, 203);
 }
+
+b.character-copied {
+	position: fixed;
+	bottom: 3px;
+	right: 30%;
+	left: 30%;
+	text-align: center;
+	height: auto;
+	width: auto;
+	font-size: 16px;
+	color: rgb(221, 222, 223);
+	z-index: 999;
+	background-color: #0a84ff;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 0px;
+	border: 0px solid transparent;
+	text-align: center;
+	width: auto;
+	font-weight: bold;
+	font-family: zilla slab;
+}

@@ -3,6 +3,7 @@ This extension permits you to copy an accented letter in the clipboard. You can 
 Official repo of https://addons.mozilla.org/it/firefox/addon/accented-letters/.
 
 [![GitHub release](https://img.shields.io/github/release/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/emoji/releases/) [![GitHub license](https://img.shields.io/github/license/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/accented-letters-addons/blob/master/LICENSE) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons?ref=badge_shield)
 
 [<img src="img/badge.png" height="60px">](https://addons.mozilla.org/it/firefox/addon/accented-letters/) [<img src="img/a-project-of.png" height="60px" />](https://saveriomorelli.com) [<img src="img/realised-by.png" height="60px" />](https://saveriomorelli.com)
 
@@ -34,3 +35,6 @@ New UI (1.1+):
 Old UI (until 1.0):
 
 <img src="screenshots/screenshot_old.png" alt="screenshot old" height="500px" />
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons?ref=badge_large)

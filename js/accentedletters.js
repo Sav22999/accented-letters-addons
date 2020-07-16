@@ -1,5 +1,8 @@
-n_letters = 26;
-var copied = "Copied"
+var n_letters = 0;
+var max_columns_letters = 9;
+var max_row_letters = 9;
+
+var copied = "Copied";
 var char_copied_n = 0;
 
 function copyLetter(text) {
@@ -33,7 +36,8 @@ function setLowerUpperCase(type) {
 
 function setUILanguage() {
     var lang = browser.i18n.getUILanguage().toString();
-    var uppercase_title = "", lowercase_title = "";
+    var uppercase_title = "",
+        lowercase_title = "";
     switch (lang) {
         case "ar":
             //Arabic
@@ -116,6 +120,11 @@ function setUILanguage() {
             lowercase_title = "Lowercase";
             copied = "Copied";
     }
+    n_letters = document.querySelectorAll(".letter").length;
+    let width = (max_columns_letters * 46 + 10) + "px";
+    let height = (max_row_letters * 46 + 14 + document.getElementById("titles").offsetHeight) + "px";
+    document.body.style.width = width;
+    document.body.style.height = height;
     document.getElementById("uppercase").value = uppercase_title;
     document.getElementById("lowercase").value = lowercase_title;
 }

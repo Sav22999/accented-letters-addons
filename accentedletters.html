@@ -1,33 +1,41 @@
 <!---
 Created by Saverio Morelli - saveriomorelli.com
-version 1.2 - last update 2019-12-09
 --->
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="./css/accentedletters.css"/>
-  </head>
+    <link rel="stylesheet" href="./css/accentedletters.css" />
+</head>
 
 <body>
-  <div id="popup-content">
-		<div id="titles">
-			<input type="button" class="section_title" id="lowercase" value="Lowercase" /><input type="button" class="section_title" id="uppercase" value="Uppercase" />
-		</div>
-		<div id="letters">
-			<input type="button" class="letter" value="á" /><input type="button" class="letter" value="à" /><input type="button" class="letter" value="ä" /><input type="button" class="letter" value="â" /><input type="button" class="letter" value="å" /><input type="button" class="letter" value="ã" />
-			<br/>
-			<input type="button" class="letter" value="é" /><input type="button" class="letter" value="è" /><input type="button" class="letter" value="ë" /><input type="button" class="letter" value="ê" />
-			<br/>
-			<input type="button" class="letter" value="í" /><input type="button" class="letter" value="ì" /><input type="button" class="letter" value="ï" /><input type="button" class="letter" value="î" />
-			<br/>
-			<input type="button" class="letter" value="ó" /><input type="button" class="letter" value="ò" /><input type="button" class="letter" value="ö" /><input type="button" class="letter" value="ô" /><input type="button" class="letter" value="õ" />
-			<br/>
-			<input type="button" class="letter" value="ú" /><input type="button" class="letter" value="ù" /><input type="button" class="letter" value="ü" /><input type="button" class="letter" value="û" />
-			<br/>
-			<input type="button" class="letter" value="ñ" /><input type="button" class="letter" value="ý" /><input type="button" class="letter" value="ÿ" />
-		</div>
-		<input type="text" id="text_to_copy" style="display: none;" />
-	</div>
-  <script src="./js/accentedletters.js"></script>
+    <div id="popup-content">
+        <div id="titles">
+            <input type="button" class="section_title" id="lowercase" value="Lowercase" /><input type="button" class="section_title" id="uppercase" value="Uppercase" />
+        </div>
+        <div id="letters">
+            <input type="button" class="letter" value="á" /><input type="button" class="letter" value="à" /><input type="button" class="letter" value="ä" /><input type="button" class="letter" value="â" /><input type="button" class="letter" value="å" /><input type="button" class="letter" value="ã" /><input type="button" class="letter" value="ā"><input type="button" class="letter" value="ă" />
+            <br/>
+            <input type="button" class="letter" value="é" /><input type="button" class="letter" value="è" /><input type="button" class="letter" value="ë" /><input type="button" class="letter" value="ê" /><input type="button" class="letter" value="ė" /><input type="button" class="letter" value="ē" /><input type="button" class="letter" value="ĕ" /><input type="button" class="letter" value="ě" />
+            <br/>
+            <input type="button" class="letter" value="í" /><input type="button" class="letter" value="ì" /><input type="button" class="letter" value="ï" /><input type="button" class="letter" value="î" /><input type="button" class="letter" value="ĩ" /><input type="button" class="letter" value="ī" /><input type="button" class="letter" value="ĭ" />
+            <br/>
+            <input type="button" class="letter" value="ó" /><input type="button" class="letter" value="ò" /><input type="button" class="letter" value="ö" /><input type="button" class="letter" value="ô" /><input type="button" class="letter" value="õ" /><input type="button" class="letter" value="ō" /><input type="button" class="letter" value="ŏ" /><input type="button" class="letter" value="ő" />
+            <br/>
+            <input type="button" class="letter" value="ú" /><input type="button" class="letter" value="ù" /><input type="button" class="letter" value="ü" /><input type="button" class="letter" value="û" /><input type="button" class="letter" value="ů" /><input type="button" class="letter" value="ũ" /><input type="button" class="letter" value="ū" /><input type="button" class="letter" value="ŭ" /><input type="button" class="letter" value="ű" />
+            <br/>
+            <input type="button" class="letter" value="ć" /><input type="button" class="letter" value="ĉ" /><input type="button" class="letter" value="ċ" /><input type="button" class="letter" value="č" /><input type="button" class="letter" value="ý" /><input type="button" class="letter" value="ŷ" /><input type="button" class="letter" value="ÿ" />
+            <br/>
+            <input type="button" class="letter" value="ń" /><input type="button" class="letter" value="ñ" /><input type="button" class="letter" value="ň" /><input type="button" class="letter" value="ǵ" /><input type="button" class="letter" value="ĝ" /><input type="button" class="letter" value="ġ" /><input type="button" class="letter" value="ğ" /><input type="button" class="letter" value="ģ" />
+            <br>
+            <input type="button" class="letter" value="ď" /><input type="button" class="letter" value="ť" /><input type="button" class="letter" value="ĥ" /><input type="button" class="letter" value="ŵ" /><input type="button" class="letter" value="ŕ" /><input type="button" class="letter" value="ř" />
+            <br>
+            <input type="button" class="letter" value="ś" /><input type="button" class="letter" value="ŝ" /><input type="button" class="letter" value="ź" /><input type="button" class="letter" value="ż" /><input type="button" class="letter" value="ž" />
+        </div>
+        <input type="text" id="text_to_copy" style="display: none;" />
+        <!--Model: <input type="button" class="letter" value="" />-->
+    </div>
+    <script src="./js/accentedletters.js"></script>
 </body>
+
 </html>

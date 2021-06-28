@@ -8,6 +8,11 @@
     src: url("../font/zillaslab.otf");
 }
 
+@font-face {
+    font-family: zilla slab bold;
+    src: url("../font/zillaslabbold.ttf");
+}
+
 body {
     background-color: transparent;
     color: black;
@@ -23,19 +28,40 @@ body {
     height: 100%;
     margin: 0px;
     background-color: transparent;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     position: relative;
     overflow: hidden;
+}
+
+#popup-content-background {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: transparent;
+    border: 0px solid transparent;
+    position: relative;
+    overflow: hidden;
+    background-image: url("../img/icon-dark.svg");
+    background-position: 250px 250px;
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    opacity: 0.06;
 }
 
 #titles {
     position: absolute;
     width: auto;
-    height: 36px;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    overflow: hidden;
+    height: 32px;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    overflow: visible;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    padding: 0px;
+    border-radius: 3px;
 }
 
 #letters {
@@ -48,6 +74,7 @@ body {
     padding-left: 4px;
     padding-right: 4px;
     overflow: hidden;
+    background: transparent;
 }
 
 .section_title {
@@ -55,22 +82,30 @@ body {
     width: 50%;
     height: 100%;
     padding: 3px;
-    color: rgb(10, 132, 255);
-    border: 0px;
-    border-radius: 0px;
+    border: 0px solid transparent;
+    border-radius: 3px;
     font-size: 14px;
-    border-top: 3px solid rgb(10, 132, 255);
-    border-bottom: 1px solid rgb(201, 202, 203);
     font-family: zilla slab;
     margin: 0px;
     cursor: pointer;
     position: relative;
-    font-weight: bold;
-    transition: 0.1s;
+    font-weight: normal;
+    transition: 0.2s;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: inherit;
+    color: #222222;
+    z-index: 8;
+}
+
+.selection_title_sel {
+    color: rgb(10, 132, 255);
+    background-color: #DFDFDF;
+    font-family: zilla slab bold;
 }
 
 .letter {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     padding: 5px;
     width: 40px;
     height: 40px;
@@ -82,21 +117,26 @@ body {
     margin: 3px;
     cursor: pointer;
     position: relative;
-    transition: 0.1s;
+    transition: 0.2s;
+    cursor: pointer;
+    outline: inherit;
 }
 
 .section_title:hover,
 .letter:hover {
-    background-color: rgb(221, 222, 223);
+    background-color: #E5E5E5;
 }
 
 .letter:active,
 .letter:focus {
     box-shadow: 0px 0px 0px 2px #0a84ff, 0px 0px 0px 5px #b1d6fc;
+    background-color: #E5E5E5;
 }
 
-.section_title:active {
-    background-color: rgb(201, 202, 203);
+.section_title:active, .section_title:focus {
+    background-color: #E2E2E2;
+    box-shadow: 0px 0px 0px 3px #0a84ff;
+    z-index: 9;
 }
 
 b.character-copied {

@@ -11,7 +11,7 @@ Official repository of https://addons.mozilla.org/it/firefox/addon/accented-lett
 
 [![GitHub release](https://img.shields.io/github/release/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/emoji/releases/) [![GitHub license](https://img.shields.io/github/license/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/accented-letters-addons/blob/master/LICENSE) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons?ref=badge_shield)
 
-[<img src="img/badge.png" width="170px">](https://addons.mozilla.org/it/firefox/addon/accented-letters/)
+[<img src="img/firefoxAddons.png" width="170px">](https://addons.mozilla.org/it/firefox/addon/accented-letters/)
 
 To support me, you can do a donation :smile: with **PayPal**, **LiberaPay** or **Ko-Fi**:
 

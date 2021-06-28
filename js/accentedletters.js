@@ -22,15 +22,11 @@ function setLowerUpperCase(type) {
         //document.getElementsByClassName("letter")[i].onclick = function(e){copyLetter(i);};
     }
     if (type == "upper") {
-        document.getElementById("lowercase").style.borderTopColor = "transparent";
-        document.getElementById("lowercase").style.color = "black";
-        document.getElementById("uppercase").style.borderTopColor = "rgb(10, 132, 255)";
-        document.getElementById("uppercase").style.color = "rgb(10, 132, 255)";
+        if (document.getElementById("lowercase").classList.contains("selection_title_sel")) document.getElementById("lowercase").classList.remove("selection_title_sel");
+        document.getElementById("uppercase").classList.add("selection_title_sel");
     } else if (type == "lower") {
-        document.getElementById("lowercase").style.borderTopColor = "rgb(10, 132, 255)";
-        document.getElementById("lowercase").style.color = "rgb(10, 132, 255)";
-        document.getElementById("uppercase").style.borderTopColor = "transparent";
-        document.getElementById("uppercase").style.color = "black";
+        document.getElementById("lowercase").classList.add("selection_title_sel");
+        if (document.getElementById("uppercase").classList.contains("selection_title_sel")) document.getElementById("uppercase").classList.remove("selection_title_sel");
     }
 }
 

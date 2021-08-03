@@ -2,7 +2,7 @@
     <br>
     <img width="70" src="img/icon-dark.svg" alt="Accented Letters icon" />
     <br>
-    <h1>Accented Letters</h1>
+    Accented Letters
     <br>
 </h1>
 

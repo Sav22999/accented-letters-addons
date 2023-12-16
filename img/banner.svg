@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1024 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(26.2564,0,0,11.9048,-1234.05,-464.286)">
+        <rect x="47" y="39" width="39" height="42" style="fill:white;"/>
+    </g>
+    <g transform="matrix(1.88794,0,0,1.88794,19.1885,243.503)">
+        <text x="0px" y="0px" style="font-family:'FiraSans-ExtraBold', 'Fira Sans', sans-serif;font-weight:800;font-size:133.315px;fill:rgb(82,82,82);">A<tspan x="74.79px 133.982px 193.173px 262.497px 334.487px 382.214px 451.538px " y="0px 0px 0px 0px 0px 0px 0px ">ccented</tspan></text>
+        <g transform="matrix(133.315,0,0,133.315,383.681,105.935)">
+        </g>
+        <text x="0px" y="105.935px" style="font-family:'FiraSans-ExtraBold', 'Fira Sans', sans-serif;font-weight:800;font-size:133.315px;fill:rgb(82,82,82);">l<tspan x="35.195px 104.519px 152.246px 199.973px 269.296px 318.623px " y="105.935px 105.935px 105.935px 105.935px 105.935px 105.935px ">etters</tspan></text>
+    </g>
+    <g transform="matrix(26.2564,0,0,11.9048,-1234.05,-464.286)">
+        <rect x="47" y="39" width="39" height="42" style="fill:url(#_Linear1);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,21.0315,-44)">
+        <g>
+            <g transform="matrix(1,0,0,1,408.412,486)">
+                <text x="0px" y="0px" style="font-family:'Basic-Regular', 'Basic';font-size:28.909px;fill:rgb(82,82,82);">S</text>
+            </g>
+            <g transform="matrix(1,0,0,1,422.515,486)">
+                <text x="0px" y="0px" style="font-family:'Basic-Regular', 'Basic';font-size:28.909px;fill:rgb(82,82,82);">a<tspan x="12.846px 25.537px 39.104px 47.857px 54.055px 68.68px 75.612px 96.66px 111.285px 120.038px 133.605px 139.266px 144.928px " y="0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px 0px ">verio Morelli</tspan></text>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,11.1355,340)">
+        <g>
+            <g transform="matrix(133.315,0,0,133.315,1006.26,0)">
+            </g>
+            <text x="0px" y="0px" style="font-family:'FiraSans-ExtraBold', 'Fira Sans', sans-serif;font-weight:800;font-size:133.315px;fill:rgb(82,82,82);">Accented letters</text>
+        </g>
+    </g>
+    <g transform="matrix(4.53383,0,0,4.53383,434.326,111.561)">
+        <g transform="matrix(34,0,0,34,27.4,25)">
+        </g>
+        <text x="7px" y="25px" style="font-family:'SourceCodeProRoman-Medium', 'Source Code Pro', monospace;font-weight:200;font-size:34px;">à</text>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(39,0,0,42,47,60)"><stop offset="0" style="stop-color:white;stop-opacity:0.9"/><stop offset="1" style="stop-color:rgb(149,149,149);stop-opacity:0.9"/></linearGradient>
+    </defs>
+</svg>

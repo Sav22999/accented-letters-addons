@@ -31,7 +31,7 @@ function setLowerUpperCase(type) {
 }
 
 function setUILanguage() {
-    var lang = browser.i18n.getUILanguage().toString();
+    var lang = chrome.i18n.getUILanguage().toString();
     var uppercase_title = "",
         lowercase_title = "";
     switch (lang) {

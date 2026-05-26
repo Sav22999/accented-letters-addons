@@ -5,6 +5,7 @@ Created by Saverio Morelli - saveriomorelli.com
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/accentedletters.css"/>
 </head>
 
@@ -12,55 +13,27 @@ Created by Saverio Morelli - saveriomorelli.com
 <div id="popup-content">
     <div id="popup-content-background"></div>
     <div id="titles">
-        <input type="button" class="section_title" id="lowercase" value="Lowercase"/><input type="button"
-                                                                                            class="section_title"
-                                                                                            id="uppercase"
-                                                                                            value="Uppercase"/>
+        <input type="button" class="section_title" id="lowercase" value="Lowercase"/>
+        <input type="button" class="section_title" id="uppercase" value="Uppercase"/>
+        <button class="section_title" id="settings_btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+        </button>
     </div>
-    <div id="letters">
-        <input type="button" class="letter" value="á"/><input type="button" class="letter" value="à"/><input
-            type="button" class="letter" value="ä"/><input type="button" class="letter" value="â"/><input
-            type="button" class="letter" value="å"/><input type="button" class="letter" value="ã"/><input
-            type="button" class="letter" value="ā"><input type="button" class="letter" value="ă"/>
-        <br/>
-        <input type="button" class="letter" value="é"/><input type="button" class="letter" value="è"/><input
-            type="button" class="letter" value="ë"/><input type="button" class="letter" value="ê"/><input
-            type="button" class="letter" value="ė"/><input type="button" class="letter" value="ē"/><input
-            type="button" class="letter" value="ĕ"/><input type="button" class="letter" value="ě"/>
-        <br/>
-        <input type="button" class="letter" value="í"/><input type="button" class="letter" value="ì"/><input
-            type="button" class="letter" value="ï"/><input type="button" class="letter" value="î"/><input
-            type="button" class="letter" value="ĩ"/><input type="button" class="letter" value="ī"/><input
-            type="button" class="letter" value="ĭ"/>
-        <br/>
-        <input type="button" class="letter" value="ó"/><input type="button" class="letter" value="ò"/><input
-            type="button" class="letter" value="ö"/><input type="button" class="letter" value="ô"/><input
-            type="button" class="letter" value="õ"/><input type="button" class="letter" value="ō"/><input
-            type="button" class="letter" value="ŏ"/><input type="button" class="letter" value="ő"/>
-        <br/>
-        <input type="button" class="letter" value="ú"/><input type="button" class="letter" value="ù"/><input
-            type="button" class="letter" value="ü"/><input type="button" class="letter" value="û"/><input
-            type="button" class="letter" value="ů"/><input type="button" class="letter" value="ũ"/><input
-            type="button" class="letter" value="ū"/><input type="button" class="letter" value="ŭ"/><input
-            type="button" class="letter" value="ű"/>
-        <br/>
-        <input type="button" class="letter" value="ć"/><input type="button" class="letter" value="ĉ"/><input
-            type="button" class="letter" value="ċ"/><input type="button" class="letter" value="č"/><input
-            type="button" class="letter" value="ý"/><input type="button" class="letter" value="ŷ"/><input
-            type="button" class="letter" value="ÿ"/>
-        <br/>
-        <input type="button" class="letter" value="ń"/><input type="button" class="letter" value="ñ"/><input
-            type="button" class="letter" value="ň"/><input type="button" class="letter" value="ǵ"/><input
-            type="button" class="letter" value="ĝ"/><input type="button" class="letter" value="ġ"/><input
-            type="button" class="letter" value="ğ"/><input type="button" class="letter" value="ģ"/>
-        <br>
-        <input type="button" class="letter" value="ď"/><input type="button" class="letter" value="ť"/><input
-            type="button" class="letter" value="ĥ"/><input type="button" class="letter" value="ŵ"/><input
-            type="button" class="letter" value="ŕ"/><input type="button" class="letter" value="ř"/>
-        <br>
-        <input type="button" class="letter" value="ś"/><input type="button" class="letter" value="ŝ"/><input
-            type="button" class="letter" value="ź"/><input type="button" class="letter" value="ż"/><input
-            type="button" class="letter" value="ž"/>
+    <div id="search-container" style="display: none; padding: 4px; background: #f5f5f5;">
+        <input type="text" id="search-bar" placeholder="Search character..."
+               style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 3px; font-family: 'opensans', sans-serif;">
+    </div>
+    <div id="letters_container"
+         style="overflow-y: auto; height: calc(100% - 38px); position: relative; width: 100%;">
+        <div id="letters" style="position: relative; top: 0;">
+            <!-- Lettere verranno caricate dinamicamente -->
+            <div id="default_letters" class="chars_container"></div>
+            <div id="extra_letters" class="chars_container"></div>
+        </div>
     </div>
     <input type="text" id="text_to_copy" style="display: none;"/>
     <!--Model: <input type="button" class="letter" value="" />-->

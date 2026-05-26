@@ -2,24 +2,19 @@
   "manifest_version": 3,
   "name": "Accented Letters - Special characters",
   "version": "3.0",
-
   "description": "__MSG_app_description__",
   "default_locale": "en",
-
   "icons": {
     "16": "./img/icon-dark-16.png",
     "24": "./img/icon-dark-24.png",
     "48": "./img/icon-dark-48.png",
     "96": "./img/icon-dark-96.png"
   },
-
   "browser_specific_settings": {
     "gecko": {
-      "id": "accentedletters@saveriomorelli.com",
-      "data_collection_permissions": false
+      "id": "accentedletters@saveriomorelli.com"
     }
   },
-
   "action": {
     "default_icon": {
       "16": "./img/icon-light-16.png",
@@ -30,27 +25,27 @@
     "default_title": "Accented Letters - Special characters",
     "default_popup": "./accentedletters.html"
   },
-
   "options_ui": {
     "page": "settings.html",
     "open_in_tab": true
   },
-
   "permissions": [
     "storage",
     "activeTab",
     "scripting"
   ],
-
   "optional_permissions": [
     "http://*/*",
     "https://*/*"
   ],
-
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["js/content.js"],
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/content.js"
+      ],
       "all_frames": true
     }
   ]

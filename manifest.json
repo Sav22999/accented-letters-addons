@@ -15,7 +15,8 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "accentedletters@saveriomorelli.com"
+      "id": "accentedletters@saveriomorelli.com",
+      "data_collection_permissions": false
     }
   },
 

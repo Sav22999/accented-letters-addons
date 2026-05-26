@@ -269,8 +269,20 @@ function loadSettingsAndChars() {
             document.getElementById("uppercase").classList.remove("selection_title_sel");
         }
 
+        // Se siamo su mobile, forziamo il rendering iniziale corretto
+        // Anche se renderLetters verrà chiamata tra poco, impostiamo lo stato corretto dei pulsanti
         renderLetters();
+        
+        // Ulteriore controllo per mobile: se la pagina è appena stata caricata, 
+        // a volte il CSS o lo stato dei pulsanti non è ancora stabile.
+        if (isMobile()) {
+            setTimeout(renderLetters, 100);
+        }
     });
+}
+
+function isMobile() {
+    return window.matchMedia("(max-width: 600px)").matches || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
 function renderLetters(filter = '') {
@@ -279,14 +291,23 @@ function renderLetters(filter = '') {
     defaultContainer.innerHTML = '';
     extraContainer.innerHTML = '';
 
-    const lowercase = document.getElementById("lowercase").classList.contains("selection_title_sel");
+    const is_uppercase = document.getElementById("uppercase").classList.contains("selection_title_sel");
     const normFilter = normalizeString(filter);
     
+    // Applica classe CSS per forzare il case se necessario (utile su mobile)
+    if (is_uppercase) {
+        document.body.classList.add("force-uppercase");
+        document.body.classList.remove("force-lowercase");
+    } else {
+        document.body.classList.add("force-lowercase");
+        document.body.classList.remove("force-uppercase");
+    }
+
     // Render default letters
     default_chars.forEach(item => {
         if (settings.hiddenChars.includes(item.char)) return;
         
-        const charToUse = lowercase ? item.char.toLowerCase() : item.char.toUpperCase();
+        const charToUse = is_uppercase ? item.char.toUpperCase() : item.char.toLowerCase();
         const translatedDesc = translations[item.desc] || item.desc;
         
         if (filter && !normalizeString(item.char).includes(normFilter) && !normalizeString(translatedDesc).includes(normFilter)) {
@@ -312,7 +333,7 @@ function createLetterButton(char, title) {
 }
 
 function renderExtraChars(container, filter = '') {
-    const lowercase = document.getElementById("lowercase").classList.contains("selection_title_sel");
+    const is_uppercase = document.getElementById("uppercase").classList.contains("selection_title_sel");
     const normFilter = normalizeString(filter);
 
     // Mostra i set aggiuntivi con titoli
@@ -334,7 +355,7 @@ function renderExtraChars(container, filter = '') {
             items.forEach((item) => {
                 const charLower = item.char.toLowerCase();
                 const charUpper = item.char.toUpperCase();
-                const charToUse = lowercase ? charLower : charUpper;
+                const charToUse = is_uppercase ? charUpper : charLower;
                 const translatedDesc = item.desc ? (translations[item.desc] || item.desc) : '';
                 
                 // Se c'è un filtro, controlla se il carattere, la descrizione o il titolo del set corrisponde
@@ -381,7 +402,7 @@ function renderExtraChars(container, filter = '') {
             if (char.trim() === '') return;
             const charLower = char.toLowerCase();
             const charUpper = char.toUpperCase();
-            const charToUse = lowercase ? charLower : charUpper;
+            const charToUse = is_uppercase ? charUpper : charLower;
             
             if (!filter || titleMatches || normalizeString(char).includes(normFilter)) {
                 customHtml.push(charToUse);

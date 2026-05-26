@@ -132,14 +132,55 @@ function copyLetter(text) {
     if (settings.autoInsert) {
         chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
             if (tabs[0]) {
-                chrome.tabs.sendMessage(tabs[0].id, {action: "insertText", text: text}, function(response) {
-                    if (chrome.runtime.lastError || (response && !response.success)) {
-                        // Fallback to copy if auto-insert fails
-                        fallbackCopy(text);
-                    } else {
-                        showCopied();
-                    }
-                });
+                if (chrome.scripting) {
+                    // MV3 approach
+                    chrome.scripting.executeScript({
+                        target: { tabId: tabs[0].id, allFrames: true },
+                        func: (textToInsert) => {
+                            const activeElement = document.activeElement;
+                            if (activeElement && (activeElement.tagName === "INPUT" || activeElement.tagName === "TEXTAREA" || activeElement.isContentEditable)) {
+                                if (activeElement.isContentEditable) {
+                                    document.execCommand("insertText", false, textToInsert);
+                                } else {
+                                    const start = activeElement.selectionStart;
+                                    const end = activeElement.selectionEnd;
+                                    const val = activeElement.value;
+                                    activeElement.value = val.slice(0, start) + textToInsert + val.slice(end);
+                                    activeElement.selectionStart = activeElement.selectionEnd = start + textToInsert.length;
+                                }
+                                return true;
+                            }
+                            return false;
+                        },
+                        args: [text]
+                    }, (results) => {
+                        if (chrome.runtime.lastError || !results || !results[0] || !results[0].result) {
+                            // Se fallisce l'auto-insert, verifichiamo se è un problema di permessi
+                            if (chrome.runtime.lastError && chrome.runtime.lastError.message.includes('permission')) {
+                                console.warn("Auto-insert failed due to missing permissions");
+                            }
+                            // Fallback to old method if scripting fails or doesn't find focused element
+                            chrome.tabs.sendMessage(tabs[0].id, {action: "insertText", text: text}, function(response) {
+                                if (chrome.runtime.lastError || (response && !response.success)) {
+                                    fallbackCopy(text);
+                                } else {
+                                    showCopied();
+                                }
+                            });
+                        } else {
+                            showCopied();
+                        }
+                    });
+                } else {
+                    // MV2 / Firefox approach
+                    chrome.tabs.sendMessage(tabs[0].id, {action: "insertText", text: text}, function(response) {
+                        if (chrome.runtime.lastError || (response && !response.success)) {
+                            fallbackCopy(text);
+                        } else {
+                            showCopied();
+                        }
+                    });
+                }
             } else {
                 fallbackCopy(text);
             }

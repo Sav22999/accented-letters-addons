@@ -130,18 +130,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (autoInsert) {
             // Richiedi permessi per auto-insert se abilitato
-            chrome.permissions.request({
+            const permissionsToRequest = {
                 origins: ["http://*/*", "https://*/*"]
-            }, (granted) => {
+            };
+            chrome.permissions.request(permissionsToRequest, (granted) => {
                 if (granted) {
                     saveToStorage(autoInsert, additionalSets, customChars, fontFamily, defaultCase, showSearch, hiddenChars);
                 } else {
                     document.getElementById('auto-insert').checked = false;
                     saveToStorage(false, additionalSets, customChars, fontFamily, defaultCase, showSearch, hiddenChars);
-                    showStatus(translations.status_permission_denied);
+                    showStatus(translations.status_permission_denied || "Permission denied");
                 }
             });
         } else {
+            // Rimuovi permessi se disabilitato per privacy
+            chrome.permissions.remove({
+                origins: ["http://*/*", "https://*/*"]
+            });
             saveToStorage(autoInsert, additionalSets, customChars, fontFamily, defaultCase, showSearch, hiddenChars);
         }
     });

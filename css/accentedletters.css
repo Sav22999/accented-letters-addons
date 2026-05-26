@@ -17,6 +17,8 @@ body {
     /* 46*n_rows + 14 + height_titles (36)*/
     height: 400px;
     overflow: hidden;
+    margin: 0px;
+    padding: 2px;
 }
 
 #popup-content {

@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Accented Letters - Special characters",
   "version": "3.0",
 
@@ -13,37 +13,19 @@
     "96": "./img/icon-dark-96.png"
   },
 
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "accentedletters@saveriomorelli.com"
     }
   },
 
-  "browser_action": {
-    "browser_style": true,
+  "action": {
     "default_icon": {
       "16": "./img/icon-light-16.png",
       "24": "./img/icon-light-24.png",
       "48": "./img/icon-light-48.png",
       "96": "./img/icon-light-96.png"
     },
-    "theme_icons": [{
-      "dark": "./img/icon-dark-16.png",
-      "light": "./img/icon-light-16.png",
-      "size": 16
-    },{
-      "dark": "./img/icon-dark-24.png",
-      "light": "./img/icon-light-24.png",
-      "size": 24
-    },{
-      "dark": "./img/icon-dark-48.png",
-      "light": "./img/icon-light-48.png",
-      "size": 48
-    },{
-      "dark": "./img/icon-dark-96.png",
-      "light": "./img/icon-light-96.png",
-      "size": 96
-    }],
     "default_title": "Accented Letters - Special characters",
     "default_popup": "./accentedletters.html"
   },
@@ -53,11 +35,10 @@
     "open_in_tab": true
   },
 
-  "options_page": "settings.html",
-
   "permissions": [
     "storage",
-    "activeTab"
+    "activeTab",
+    "scripting"
   ],
 
   "optional_permissions": [

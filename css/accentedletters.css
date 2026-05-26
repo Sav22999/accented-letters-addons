@@ -13,9 +13,9 @@ body {
     background-color: transparent;
     color: black;
     /* 46*n_columns + 10 */
-    width: 375px;
+    width: 420px;
     /* 46*n_rows + 14 + height_titles (36)*/
-    height: 400px;
+    height: 450px;
     overflow: hidden;
     margin: 0px;
     padding: 2px;
@@ -61,9 +61,18 @@ body {
     overflow: visible;
     box-sizing: border-box;
     background-color: #F5F5F5;
-    border-radius: 3px;
-    gap: 2px;
-    padding: 2px;
+    border-radius: 5px;
+    gap: 4px;
+    padding: 4px;
+}
+
+#titles.search-visible {
+    border-radius: 5px 5px 0 0;
+    padding-bottom: 0;
+}
+
+#search-container {
+    border-radius: 0 0 5px 5px;
 }
 
 #settings_btn {
@@ -113,7 +122,7 @@ body {
     align-items: center;
     justify-content: center;
     border: 0px solid transparent;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 14px;
     font-family: 'opensans', sans-serif;
     margin: 0px;
@@ -147,7 +156,7 @@ body {
     justify-content: center;
     color: black;
     border: 0px;
-    border-radius: 3px;
+    border-radius: 5px;
     font-size: 16px;
     font-family: inherit;
     font-weight: 400;
@@ -217,7 +226,7 @@ b.character-copied {
     color: rgb(221, 222, 223);
     z-index: 999;
     background-color: #0a84ff;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 5px;
     margin: 0px;
     border: 0px solid transparent;

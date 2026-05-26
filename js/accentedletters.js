@@ -94,13 +94,26 @@ var lang_chars = {
         { char: "½", desc: "one_half" }, { char: "⅓", desc: "one_third" }, { char: "¼", desc: "one_fourth" }, 
         { char: "¾", desc: "three_fourths" }, { char: "∑", desc: "sum" }, { char: "∏", desc: "product" }, 
         { char: "∆", desc: "delta" }, { char: "√", desc: "square_root" }, { char: "∞", desc: "infinity" }, 
-        { char: "∫", desc: "integral" }
+        { char: "∫", desc: "integral" }, { char: "π", desc: "pi" }, { char: "∂", desc: "partial_derivative" },
+        { char: "¬", desc: "logical_not" }, { char: "∧", desc: "logical_and" }, { char: "∨", desc: "logical_or" },
+        { char: "∩", desc: "intersection" }, { char: "∪", desc: "union" }, { char: "⊂", desc: "subset" },
+        { char: "⊃", desc: "superset" }, { char: "∈", desc: "element_of" }, { char: "∉", desc: "not_element_of" },
+        { char: "∀", desc: "for_all" }, { char: "∃", desc: "exists" }, { char: "∄", desc: "not_exists" },
+        { char: "∅", desc: "empty_set" }, { char: "∠", desc: "angle" }, { char: "⊥", desc: "perpendicular" },
+        { char: "∥", desc: "parallel" }, { char: "∝", desc: "proportional" },
+        { char: "∟", desc: "right_angle" }
     ],
     'set-arrows': [
         { char: "←", desc: "arrow_left" }, { char: "↑", desc: "arrow_up" }, { char: "→", desc: "arrow_right" }, 
         { char: "↓", desc: "arrow_down" }, { char: "↔", desc: "arrow_left_right" }, { char: "↕", desc: "arrow_up_down" }, 
         { char: "↖", desc: "arrow_nw" }, { char: "↗", desc: "arrow_ne" }, { char: "↘", desc: "arrow_se" }, 
-        { char: "↙", desc: "arrow_sw" }
+        { char: "↙", desc: "arrow_sw" }, { char: "⇐", desc: "double_arrow_left" }, { char: "⇑", desc: "double_arrow_up" },
+        { char: "⇒", desc: "double_arrow_right" }, { char: "⇓", desc: "double_arrow_down" }, { char: "⇔", desc: "double_arrow_left_right" },
+        { char: "⇕", desc: "double_arrow_up_down" }, { char: "⇠", desc: "dashed_arrow_left" }, { char: "⇡", desc: "dashed_arrow_up" },
+        { char: "⇢", desc: "dashed_arrow_right" }, { char: "⇣", desc: "dashed_arrow_down" }, { char: "⇄", desc: "arrows_left_right" },
+        { char: "⇅", desc: "arrows_up_down" }, { char: "⇆", desc: "arrows_right_left" }, { char: "↺", desc: "anticlockwise_arrow" },
+        { char: "↻", desc: "clockwise_arrow" }, { char: "➔", desc: "heavy_arrow_right" }, { char: "➘", desc: "heavy_arrow_se" },
+        { char: "➙", desc: "heavy_arrow_ne" }
     ],
     'set-currency': [
         { char: "€", desc: "euro" }, { char: "$", desc: "dollar" }, { char: "¢", desc: "cent" }, 
@@ -252,11 +265,13 @@ function loadSettingsAndChars() {
         
         if (settings.showSearch) {
             document.getElementById("search-container").style.display = "block";
-            document.getElementById("letters_container").style.top = "74px";
+            document.getElementById("titles").classList.add("search-visible");
+            //document.getElementById("letters_container").style.top = "74px";
             document.getElementById("letters_container").style.height = "calc(100% - 74px)";
         } else {
             document.getElementById("search-container").style.display = "none";
-            document.getElementById("letters_container").style.top = "38px";
+            document.getElementById("titles").classList.remove("search-visible");
+            //document.getElementById("letters_container").style.top = "38px";
             document.getElementById("letters_container").style.height = "calc(100% - 38px)";
         }
 

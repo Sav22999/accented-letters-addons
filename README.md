@@ -11,8 +11,14 @@ This extension allows you to copy or automatically insert accented letters and s
 ### Key Features
 - **One-click Copy**: Quickly copy any character to your clipboard.
 - **Auto-insert**: Automatically insert the selected character directly into the active text field.
-- **Custom Sets**: Enable additional character sets for various languages (French, German, Spanish, Greek, Cyrillic, etc.) and symbols.
+- **Search**: Find characters instantly across all sets with the built-in search bar.
+- **Uppercase / Lowercase**: Easily switch between lowercase and uppercase variants of all characters.
+- **Language Sets**: Enable additional character sets for various languages (French, German, Spanish, Portuguese, Polish, Czech, Nordic, Romanian, Greek, Cyrillic, etc.) and symbols (arrows, currency, math).
 - **Personalized Characters**: Add your own custom characters through the settings.
+- **Hide Characters**: Show or hide individual characters to keep the popup clean and focused.
+- **Font Customization**: Choose your preferred font family for character display.
+- **Backup & Restore**: Export and import your settings as a JSON file.
+- **Multilingual UI**: Interface available in 14 languages (English, Italian, French, German, Spanish, Portuguese, Russian, Ukrainian, Polish, Japanese, Arabic, Swedish, Dutch, and Interlingua).
 - **Grouped View**: Organized layout with titles for each character set.
 
 Official repository of https://addons.mozilla.org/it/firefox/addon/accented-letters/.
@@ -28,25 +34,9 @@ To support me, you can do a donation :smile: with **PayPal**, **LiberaPay** or *
 ## How to contribute
 You can open an issue and there you must describe the feedback, the bug or the new feature you want. You can request a new language too.
 
-## Supported languages
-
-The add-on is translated in these following languages (sort A-Z):
-
-- Arabic (`ar`)
-- English (default - `en-US`, `en-UK`, `en-CA`)
-- German (`de`)
-- Spanish (`es-ES`, `es-AR`, `es-CL`, `es-MX`)
-- French (`fr`)
-- Italian (`it`)
-- Japanese (`ja`)
-- Dutch (`nl`)
-- Polish (`pl`)
-- Portuguese (`pt-PT`, `pt-BR`)
-- Chinese (`zh-CN`, `zh-TW`)
-
 ## Screenshots
 
-<img src="screenshots/2.1/1.png" alt="screenshot new UI" height="500px" />
+<img src="screenshots/3.0/1.png" alt="screenshot new UI" height="500px" />
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons?ref=badge_large)

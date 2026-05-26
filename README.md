@@ -6,7 +6,15 @@
     <br>
 </h1>
 
-This extension permits you to copy an accented letter in the clipboard. You can choose if you want to copy a lower letter or an upper letter. It supports 66 accented letters.
+This extension allows you to copy or automatically insert accented letters and special characters with just one click. You can easily switch between lowercase and uppercase, enable auto-insert, and customize your character sets.
+
+### Key Features
+- **One-click Copy**: Quickly copy any character to your clipboard.
+- **Auto-insert**: Automatically insert the selected character directly into the active text field.
+- **Custom Sets**: Enable additional character sets for various languages (French, German, Spanish, Greek, Cyrillic, etc.) and symbols.
+- **Personalized Characters**: Add your own custom characters through the settings.
+- **Grouped View**: Organized layout with titles for each character set.
+
 Official repository of https://addons.mozilla.org/it/firefox/addon/accented-letters/.
 
 [![GitHub release](https://img.shields.io/github/release/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/emoji/releases/) [![GitHub license](https://img.shields.io/github/license/Sav22999/accented-letters-addons.svg)](https://github.com/Sav22999/accented-letters-addons/blob/master/LICENSE) ![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FSav22999%2Faccented-letters-addons?ref=badge_shield)

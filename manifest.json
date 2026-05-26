@@ -1,9 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Accented Letters",
-  "version": "2.1",
+  "name": "Accented Letters - Special characters",
+  "version": "3.0",
 
-  "description": "It permits just with a single click to copy an accented letter.",
+  "description": "__MSG_app_description__",
+  "default_locale": "en",
 
   "icons": {
     "16": "./img/icon-dark-16.png",
@@ -43,7 +44,32 @@
       "light": "./img/icon-light-96.png",
       "size": 96
     }],
-    "default_title": "Accented Letters",
+    "default_title": "Accented Letters - Special characters",
     "default_popup": "./accentedletters.html"
-  }
+  },
+
+  "options_ui": {
+    "page": "settings.html",
+    "open_in_tab": true
+  },
+
+  "options_page": "settings.html",
+
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+
+  "optional_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/content.js"],
+      "all_frames": true
+    }
+  ]
 }
